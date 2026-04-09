@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory Hub</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Inventory Database Assignment</p>
+        <h1>Suppliers and stock, all in one clean dashboard.</h1>
+        <p class="lede">
+          Create suppliers, add inventory, and inspect the grouped totals sorted by inventory value.
+        </p>
+        <div class="status-bar">
+          <span class="dot"></span>
+          <span id="healthText">Checking server...</span>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>Create Supplier</h2>
+          <form id="supplierForm" class="form">
+            <label>
+              Name
+              <input name="name" type="text" placeholder="ABC Traders" required />
+            </label>
+            <label>
+              City
+              <input name="city" type="text" placeholder="Mumbai" required />
+            </label>
+            <button type="submit">Add Supplier</button>
+          </form>
+          <pre id="supplierResult" class="result"></pre>
+        </article>
+
+        <article class="card">
+          <h2>Create Inventory</h2>
+          <form id="inventoryForm" class="form">
+            <label>
+              Supplier ID
+              <input name="supplier_id" type="number" min="1" placeholder="1" required />
+            </label>
+            <label>
+              Product Name
+              <input name="product_name" type="text" placeholder="Steel Rods" required />
+            </label>
+            <label>
+              Quantity
+              <input name="quantity" type="number" min="0" placeholder="50" required />
+            </label>
+            <label>
+              Price
+              <input name="price" type="number" min="0.01" step="0.01" placeholder="120.5" required />
+            </label>
+            <button type="submit">Add Inventory</button>
+          </form>
+          <pre id="inventoryResult" class="result"></pre>
+        </article>
+      </section>
+
+      <section class="card wide">
+        <div class="section-head">
+          <h2>Grouped Inventory</h2>
+          <button id="refreshButton" type="button" class="secondary">Refresh</button>
+        </div>
+        <div id="groupedList" class="grouped-list"></div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

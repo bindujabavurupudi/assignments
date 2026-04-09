@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Industrial Safety Gloves",
+    "category": "PPE",
+    "price": 8.5,
+    "supplier": "NorthLine Supply",
+    "location": "Dallas, TX"
+  },
+  {
+    "id": 2,
+    "name": "LED Work Light",
+    "category": "Electrical",
+    "price": 18,
+    "supplier": "BrightCore",
+    "location": "Austin, TX"
+  },
+  {
+    "id": 3,
+    "name": "Pallet Stretch Film",
+    "category": "Packaging",
+    "price": 12.25,
+    "supplier": "WrapPro",
+    "location": "Chicago, IL"
+  },
+  {
+    "id": 4,
+    "name": "Corrugated Storage Boxes",
+    "category": "Packaging",
+    "price": 24.99,
+    "supplier": "BoxHarbor",
+    "location": "Atlanta, GA"
+  },
+  {
+    "id": 5,
+    "name": "Stainless Steel Bolts",
+    "category": "Hardware",
+    "price": 6.75,
+    "supplier": "BoltMart",
+    "location": "Cleveland, OH"
+  },
+  {
+    "id": 6,
+    "name": "Safety Goggles",
+    "category": "PPE",
+    "price": 9.99,
+    "supplier": "NorthLine Supply",
+    "location": "Dallas, TX"
+  },
+  {
+    "id": 7,
+    "name": "Warehouse Label Printer",
+    "category": "Office Equipment",
+    "price": 149,
+    "supplier": "PrintWorks",
+    "location": "Seattle, WA"
+  },
+  {
+    "id": 8,
+    "name": "Heavy Duty Shelving Unit",
+    "category": "Storage",
+    "price": 199.5,
+    "supplier": "RackForge",
+    "location": "Denver, CO"
+  },
+  {
+    "id": 9,
+    "name": "Multi-Purpose Cleaner",
+    "category": "Janitorial",
+    "price": 14.3,
+    "supplier": "CleanWave",
+    "location": "Phoenix, AZ"
+  },
+  {
+    "id": 10,
+    "name": "Packing Tape Dispenser",
+    "category": "Packaging",
+    "price": 7.95,
+    "supplier": "WrapPro",
+    "location": "Chicago, IL"
+  },
+  {
+    "id": 11,
+    "name": "Adjustable Step Ladder",
+    "category": "Hardware",
+    "price": 54.9,
+    "supplier": "ToolBridge",
+    "location": "Nashville, TN"
+  },
+  {
+    "id": 12,
+    "name": "Industrial Fan",
+    "category": "Electrical",
+    "price": 89.99,
+    "supplier": "BrightCore",
+    "location": "Austin, TX"
+  }
+]

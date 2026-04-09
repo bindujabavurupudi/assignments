@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zeerostock Inventory Search</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Zeerostock</p>
+          <h1>Inventory Search</h1>
+          <p class="subhead">
+            Search surplus inventory across suppliers with name, category, and price filters.
+          </p>
+        </div>
+      </section>
+
+      <section class="panel">
+        <form id="search-form" class="filters">
+          <label>
+            Product name
+            <input id="q" name="q" type="text" placeholder="Search by product name" />
+          </label>
+
+          <label>
+            Category
+            <select id="category" name="category">
+              <option value="">All categories</option>
+            </select>
+          </label>
+
+          <label>
+            Min price
+            <input id="minPrice" name="minPrice" type="number" step="0.01" min="0" />
+          </label>
+
+          <label>
+            Max price
+            <input id="maxPrice" name="maxPrice" type="number" step="0.01" min="0" />
+          </label>
+
+          <div class="actions">
+            <button type="submit">Search</button>
+            <button type="button" id="reset-btn" class="secondary">Reset</button>
+          </div>
+        </form>
+
+        <p id="error" class="error" role="alert" aria-live="polite"></p>
+        <p id="status" class="status" aria-live="polite"></p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Supplier</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tbody id="results"></tbody>
+          </table>
+        </div>
+
+        <div id="empty-state" class="empty-state hidden">
+          No results found
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
